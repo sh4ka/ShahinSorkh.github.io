@@ -8,25 +8,47 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+# TODO create `page` and `post` layouts
+# TODO use `pagination` for home page
+# TODO add `/favicon.ico`
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Shahin Sorkh's Blog
+email: sorkh.shahin@hotmail.com
+mobile: "+989390805086"
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  AKA Ali Zakeri;
+  NERD;
+  Grammar nazi;
+  Full stack web dev;
+  In love with n(ude|odej)s;
+  Believing in open-source;
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: shahin_sorkh
+github_username:  ShahinSorkh
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: "Shahin Sorkh"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+      primary:
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-midnight
 plugins:
   - jekyll-feed
 

@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+  <h2><a href="{{ post.url | smartify }}">{{ post.title }}</a> <small>({{ post.date | date_to_string }})</small></h2>
+  <article>{{ post.excerpt | smartify | markdownify | normalize_whitespace }}</article>
+  <hr>
+{% endfor %}
