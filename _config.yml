@@ -18,15 +18,6 @@
 title: Shahin Sorkh's Blog
 email: sorkh.shahin@hotmail.com
 mobile: "+989390805086"
-description: >- # this means to ignore newlines until "baseurl:"
-  AKA Ali Zakeri;
-  NERD;
-  Grammar nazi;
-  Full stack web dev;
-  In love with n(ude|odej)s;
-  Believing in open-source;
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://shahinsorkh.ir"
 twitter_username: shahin_sorkh
 github_username:  ShahinSorkh
 
@@ -49,6 +40,7 @@ markdown: kramdown
 theme: jekyll-theme-midnight
 paginate: 5
 plugins:
+  - jekyll-github-metadata
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate

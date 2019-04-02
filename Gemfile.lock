@@ -241,6 +241,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.11)
+  jekyll-github-metadata (~> 2.12)
   jekyll-paginate (~> 1.1)
   jekyll-sitemap (~> 1.2)
   jekyll-theme-midnight (~> 0.1.1)
