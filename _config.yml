@@ -51,6 +51,7 @@ theme: jekyll-theme-midnight
 paginate: 5
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-paginate
 
 # Exclude from processing.
