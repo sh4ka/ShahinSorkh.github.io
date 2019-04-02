@@ -20,6 +20,7 @@ email: sorkh.shahin@hotmail.com
 mobile: "+989390805086"
 twitter_username: shahin_sorkh
 github_username:  ShahinSorkh
+timezone: Asia/Tehran
 
 defaults:
   - scope:
