@@ -1,0 +1,22 @@
+---
+title: Tags
+primary: true
+---
+
+<div id="archives">
+{% for tag in site.tags %}
+  <div class="archive-group">
+    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+    <div id="#{{ tag_name }}"></div>
+    <p></p>
+    
+    <h3 class="tag-head">{{ tag_name }}</h3>
+    <a name="{{ tag_name }}"></a>
+    {% for post in site.tags[tag_name] %}
+    <article class="archive-item">
+      <h4><small>{{ post.date | date_to_string }}</small> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+    </article>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>
