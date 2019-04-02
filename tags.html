@@ -9,13 +9,12 @@ primary: true
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
     <div id="#{{ tag_name }}"></div>
     <p></p>
-    
-    <h3 class="tag-head">{{ tag_name }}</h3>
-    <a name="{{ tag_name }}"></a>
+
+    <h3 class="archive-head"><a href="{{ page.url }}#{{ tag_name | slugize }}" name="{{ tag_name }}"><i class="icon link"></i></a>&nbsp;&nbsp;{{ tag_name }}</h3>
     {% for post in site.tags[tag_name] %}
-    <article class="archive-item">
-      <h4><small>{{ post.date | date_to_string }}</small> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-    </article>
+      <article class="archive-item">
+        <h4><small>{{ post.date | date_to_string }}</small> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+      </article>
     {% endfor %}
   </div>
 {% endfor %}

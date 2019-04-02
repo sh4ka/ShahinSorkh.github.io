@@ -9,13 +9,12 @@ primary: true
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}"></div>
     <p></p>
-    
-    <h3 class="category-head">{{ category_name | capitalize }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
+
+    <h3 class="archive-head"><a href="{{ page.url }}#{{ category_name | slugize }}" name="{{ category_name }}"><i class="icon link"></i></a>&nbsp;&nbsp;{{ category_name | capitalize }}</h3>
     {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <h4><small>{{ post.date | date_to_string }}</small> <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
+      <article class="archive-item">
+        <h4><small>{{ post.date | date_to_string }}</small> <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+      </article>
     {% endfor %}
   </div>
 {% endfor %}
