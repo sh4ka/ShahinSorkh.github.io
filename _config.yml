@@ -49,8 +49,10 @@ defaults:
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-midnight
+paginate: 5
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
