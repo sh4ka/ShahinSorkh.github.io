@@ -1,0 +1,32 @@
+@mixin icon-heart($box-size, $bg-color: #ff0010) {
+    .heart-#{$box-size} {
+        background: $bg-color;
+        width: $box-size;
+        height: $box-size;
+        transform: rotate(45deg);
+        display: inline-block;
+        position: relative;
+        transition: all 2s ease-in-out;
+        margin: 0 2px;
+
+        &:before,
+        &:after {
+            content: "";
+            background: $bg-color;
+            width: $box-size;
+            height: $box-size;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        &:before {
+            left: -($box-size / 2);
+            top: 0;
+        }
+
+        &:after {
+            left: 0;
+            top: -($box-size / 2);
+        }
+    }
+}

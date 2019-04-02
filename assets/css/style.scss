@@ -3,3 +3,6 @@
 @import "jekyll-theme-midnight";
 @import "header_nav";
 @import "pagination";
+@import "icon-heart";
+
+@include icon-heart(5px);
