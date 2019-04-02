@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% for post in paginator.posts %}
-  <h2><a href="{{ post.url | smartify }}">{{ post.title }}</a> <small>({{ post.date | date_to_string }})</small></h2>
+  <h2><small>{{ post.date | date_to_string }}</small> <a href="{{ post.url | smartify }}">{{ post.title }}</a></h2>
   <article>{{ post.excerpt | smartify | markdownify | normalize_whitespace }}</article>
   <hr>
 {% endfor %}
