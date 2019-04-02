@@ -9,7 +9,6 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # TODO create `page` and `post` layouts
-# TODO use `pagination` for home page
 # TODO add `/favicon.ico`
 
 # Site settings

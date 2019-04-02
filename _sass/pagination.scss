@@ -1,0 +1,30 @@
+.pagination {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #696969;
+
+    .page_number,
+    .previous,
+    .next {
+        display: block;
+    }
+
+    .page_number {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .previous { float: left; }
+    .next { float: right; }
+    .disabled { opacity: 0.6; }
+
+    @media screen and (max-width: 300px) {
+        .page_number {
+            text-align: left;
+            width: auto;
+        }
+        .previous { float: none; }
+        .next { float: none; }
+    }
+}

@@ -2,8 +2,24 @@
 layout: default
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
   <h2><a href="{{ post.url | smartify }}">{{ post.title }}</a> <small>({{ post.date | date_to_string }})</small></h2>
   <article>{{ post.excerpt | smartify | markdownify | normalize_whitespace }}</article>
   <hr>
 {% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">&laquo; Previous</a>
+  {% else %}
+    <span class="previous disabled">&laquo; Previous</span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next &raquo;</a>
+  {% else %}
+    <span class="next disabled">Next &raquo;</span>
+  {% endif %}
+  <span class="page_number ">
+    {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+</div>
