@@ -1,28 +1,18 @@
 // grabed from https://github.com/wentin/cssicon
 
 .icon {
-    position: static;
+    position: relative;
     display: inline-block;
     margin: 0 2px;
-    &:before {
+
+    &:before,
+    &:after,
+    i,
+    i:after,
+    i:before {
         content: '';
         position: absolute;
-    }
-    &:after {
-        content: '';
-        position: absolute;
-    }
-    i {
-        position: absolute;
-        &:before {
-            content: '';
-            position: absolute;
-        }
-        &:after {
-            content: '';
-            position: absolute;
-        }
     }
 }
 
-@import "./icon-heart.scss"
+@import "./icon-heart";
