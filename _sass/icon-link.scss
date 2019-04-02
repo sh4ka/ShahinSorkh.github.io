@@ -1,0 +1,19 @@
+.icon.link {
+    margin-bottom: 5px;
+    width: 7px;
+    height: 1px;
+    background-color: currentColor;
+    transform: rotate(-45deg);
+
+    &:after,
+    &:before {
+        top: -3px;
+        width: 8px;
+        height: 5px;
+        border-radius: 2px;
+        border: solid 1px currentColor;
+    }
+
+    &:before { left: -7px; }
+    &:after { right: -7px; }
+}
