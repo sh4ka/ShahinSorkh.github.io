@@ -1,2 +1,5 @@
 packadd vim-liquid
 packadd vim-jekyll
+
+autocmd vimrc FileType html setlocal filetype=liquid
+autocmd vimrc FileType markdown setlocal filetype=liquid
