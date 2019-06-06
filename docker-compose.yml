@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+    blog:
+        container_name: blog
+        image: jekyll/minimal:3.8.5
+        command: jekyll serve
+        restart: always
+        ports:
+            - '127.0.0.1:4000:4000'
+        environment:
+            - PAGES_REPO_NWO=ShahinSorkh/ShahinSorkh.github.io
+        volumes:
+            - .:/srv/jekyll:z
+            - ./vendor/bundle:/usr/local/bundle:z
+
