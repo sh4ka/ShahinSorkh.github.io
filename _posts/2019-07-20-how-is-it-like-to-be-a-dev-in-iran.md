@@ -5,13 +5,13 @@ categories: ["Iran", "Sanctions", "Coding"]
 tags: ["iran", "sanctions", "censorship", "vpn", "tor", "fod", "privoxy", "named", "shecan"]
 ---
 
-It is going to cover _cersorship_ and _sanctions_.
+It is going to cover _censorship_ and _sanctions_.
 
 # Censorship
 
 Censorship comes along with traces of governments ALWAYS!
 
-In many contries allover the world, governments tend to block their citizens to
+In many countries all over the world, governments tend to block their citizens to
 access some certain domains/ips across the internet. Some say "It's there to
 keep culture and moral healthy!". They block pornographies and so. Even in US
 we can find certain domains which are blocked and cannot be accessed like those
@@ -20,7 +20,7 @@ which contain CP or wild anti-humanism contents.
 But in Iran (and most other countries) that's not the case!
 
 They block many things. We cannot visit medias like BBC, FoxNews, VOA,
-social-medias like Twitter, Facebook, messangers like Telegram, WeChat, Kik,
+social-medias like Twitter, Facebook, messengers like Telegram, WeChat, Kik,
 SnapChat, services like YouTube, you may not believe, but even some subdomains
 of sourceforge!
 
@@ -49,7 +49,7 @@ handshakes! Sometimes SSL handshakes can take long forever and break at the end!
 Sometimes CloudFlare resists to serve due to broken TCP packets!
 
 It is pain in the ass when you are going to learn something new; no YouTube,
-no Reddit, no Medium, painfull surfing the web and so on.
+no Reddit, no Medium, painfully surfing the web and so on.
 
 I don't talk about low quality internet access, like 200kB/s on home wifi!
 
@@ -64,7 +64,7 @@ That's what they believe. Both Iran's government AND international institutes,
 you say UN.
 
 People are dying due to absence of medicines. People are starving.
-The economy system is falling apart and the politicians and their children are
+The economic system is falling apart and the politicians and their children are
 all abroad! None of them have any sense about what is going on the streets.
 
 **What happens to us, IT men?** *Sanctions!*
